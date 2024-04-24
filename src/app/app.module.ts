@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
+import { CertificateComponent } from './certificate/certificate.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { EducationComponent } from './education/education.component';
     DashboardComponent,
     NavigationComponent,
     AboutComponent,
-    EducationComponent
+    EducationComponent,
+    CertificateComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
