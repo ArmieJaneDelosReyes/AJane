@@ -3,4 +3,211 @@ p{
   font-family: "Bebas Neue", sans-serif;
 }
 
+.radial-bars{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap (25%,25%,25%,25%);
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bars .radial-bar{
+  width: 50%;
+  height: 170px;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar{
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+
+.path{
+  stroke-width: 10;
+  stroke: aqua;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path1 1s 1s linear forwards;}
+.path-3{animation: animate-path1 1s 1s linear forwards;}
+.path-4{animation: animate-path1 1s 1s linear forwards;}
+
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 200;
+  }
+}
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 150;
+  }
+}
+
+.radial-bar .percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showtext 0.5 1s linear forwards;
+  opacity: 0;
+}
+
+.progress-bar .text{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 70%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  animation: showtext 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showtext {
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* technical skills */
+.my-skills-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 100px;
+}
+.tech-skills-container{
+  width: 100%;
+  height: 100vh;
+  display: block;
+  justify-content: center;
+}
+.tech-skills-container h1{
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.my-skills h2{
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.progress-bar{
+  background: #959595;
+  width: 400px;
+  height: 5px;
+  border-radius: 5px;
+
+}
+
+.progress-bar div{
+  height: 5px;
+  border-radius: 5px;
+  width: 0px;
+  background: #fd0363;
+}
+
+.progress-bar div span{
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background: #fff;
+  float: right;
+  margin: -9px -20px 0px 0px ;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.html-progress{
+  background: #fd0363;
+  animation: html-progress 1s linear forwards;
+}
+.css-progress{
+  background: #fd0363;
+  animation: css-progress 1s linear forwards;
+}
+.javascript-progress{
+  background: #fd0363;
+  animation: javascript-progress 1s linear forwards;
+}
+.html-progress span{
+  border: 1px solid #fd0363;
+}
+.css-progress span{
+  border: 1px solid #fd0363;
+}
+.javascript-progress span{
+  border: 1px solid #fd0363;
+}
+@keyframes html-progress{
+  100%{
+    width: 20%;
+  }
+}
+@keyframes css-progress{
+  100%{
+    width: 20%;
+  }
+}
+@keyframes javascript-progress{
+  100%{
+    width: 20%;
+  }
+}
 
