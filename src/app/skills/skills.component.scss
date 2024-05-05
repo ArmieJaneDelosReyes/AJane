@@ -14,9 +14,10 @@ p{
 
 .radial-bars .radial-bar{
   width: 50%;
-  height: 170px;
-  margin-bottom: -20px;
+  height: 150px;
+  margin-bottom: -10px;
   position: relative;
+  margin-left: 15px;
 }
 
 .radial-bars .radial-bar svg{
@@ -30,8 +31,7 @@ p{
 
 .radial-bars .radial-bar .progress-bar{
   stroke-width: 10;
-  stroke: black;
-  fill: transparent;
+  stroke:black;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
   stroke-linecap: round;
@@ -45,43 +45,56 @@ p{
 
 .path{
   stroke-width: 10;
-  stroke: aqua;
-  fill: transparent;
+  stroke: rgb(255, 0, 140);
+  fill: black;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
   stroke-linecap: round;
 }
 
 .path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path1 1s 1s linear forwards;}
-.path-3{animation: animate-path1 1s 1s linear forwards;}
-.path-4{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+.path-5{animation: animate-path5 1s 1s linear forwards;}
+.path-6{animation: animate-path6 1s 1s linear forwards;}
 
 @keyframes animate-path1 {
   100%{
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 320;
   }
 }
-@keyframes animate-path1 {
+@keyframes animate-path2 {
   100%{
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 320;
   }
 }
-@keyframes animate-path1 {
+@keyframes animate-path3 {
   100%{
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 390;
   }
 }
-@keyframes animate-path1 {
+@keyframes animate-path4 {
   100%{
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 410;
+  }
+}
+@keyframes animate-path5 {
+  100%{
+    stroke-dashoffset: 410;
+  }
+}
+@keyframes animate-path6 {
+  100%{
+    stroke-dashoffset: 450;
   }
 }
 
 .radial-bar .percentage{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 64%;
+  color: white;
   transform: translate(-50%,-50%);
   font-size: 17px;
   font-weight: 500;
@@ -93,10 +106,10 @@ p{
   width: 100%;
   position: absolute;
   text-align: center;
-  left: 70%;
+  left: 80%;
   bottom: -3px;
   transform: translateX(-50%);
-  font-size: 17px;
+  font-size: 10px;
   font-weight: 500;
   color: black;
   animation: showtext 0.5s 1s linear forwards;
@@ -110,18 +123,15 @@ p{
 }
 
 
-
-
-
 /* technical skills */
 .my-skills-container{
   display: flex;
   justify-content: space-between;
-  margin: 5px 100px;
+  margin-left: 50px;
 }
 .tech-skills-container{
   width: 100%;
-  height: 100vh;
+  height: 77vh;
   display: block;
   justify-content: center;
 }
@@ -147,16 +157,16 @@ p{
 }
 
 .progress-bar{
-  background: #959595;
+  background: #eaeaea;
   width: 400px;
-  height: 5px;
-  border-radius: 5px;
+  height: 9px;
+  border-radius: 3px;
 
 }
 
 .progress-bar div{
-  height: 5px;
-  border-radius: 5px;
+  height: 9px;
+  border-radius: 3px;
   width: 0px;
   background: #fd0363;
 }
@@ -173,41 +183,67 @@ p{
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  font-family: "Bebas Neue", sans-serif;
 }
-.html-progress{
+.figma-progress{
   background: #fd0363;
-  animation: html-progress 1s linear forwards;
+  animation: figma-progress 1s linear forwards;
 }
-.css-progress{
+.photoshop-progress{
   background: #fd0363;
-  animation: css-progress 1s linear forwards;
+  animation: photoshop-progress 1s linear forwards;
 }
-.javascript-progress{
+.canva-progress{
   background: #fd0363;
-  animation: javascript-progress 1s linear forwards;
+  animation: canva-progress 1s linear forwards;
 }
-.html-progress span{
-  border: 1px solid #fd0363;
+.brevo-progress{
+  background: #fd0363;
+  animation: brevo-progress 1s linear forwards;
 }
-.css-progress span{
-  border: 1px solid #fd0363;
-}
-.javascript-progress span{
-  border: 1px solid #fd0363;
-}
-@keyframes html-progress{
-  100%{
-    width: 20%;
-  }
-}
-@keyframes css-progress{
-  100%{
-    width: 20%;
-  }
-}
-@keyframes javascript-progress{
-  100%{
-    width: 20%;
-  }
+.wordpress-progress{
+  background: #fd0363;
+  animation: wordpress-progress 1s linear forwards;
 }
 
+
+.figma-progress span{
+  border: 1px solid #fd0363;
+}
+.photoshop-progress span{
+  border: 1px solid #fd0363;
+}
+.canva-progress span{
+  border: 1px solid #fd0363;
+}
+.brevo-progress span{
+  border: 1px solid #fd0363;
+}
+.wordpress-progress span{
+  border: 1px solid #fd0363;
+}
+@keyframes figma-progress{
+  100%{
+    width: 50%;
+  }
+}
+@keyframes photoshop-progress{
+  100%{
+    width: 40%;
+  }
+}
+@keyframes canva-progress{
+  100%{
+    width: 70%;
+  }
+}
+@keyframes brevo-progress{
+  100%{
+    width: 70%;
+  }
+}
+@keyframes wordpress-progress{
+  100%{
+    width: 60%;
+  }
+}
