@@ -1,10 +1,18 @@
-<div class="bg-zinc-100 block sm:grid grid-cols-3 gap-0 mx-36 mt-28" id="home">
-  <div class="my-40 text-right">
-    <p class="text-3xl font-bold">Hello, I'm</p>
-    <p class="text-5xl text-pink-600 font-bold">Armie Jane D.</p>
-    <p class="text-5xl text-pink-600 font-bold">Delos Reyes</p>
+<div class="sm:grid block sm:grid-cols-3 gap-0" id="home">
+  <div class="sm:mt-40 text-left sm:text-right">
+    <p class="text-1xl sm:text-3xl font-bold">Hello, I'm</p>
+    <p class="text-3xl sm:text-5xl mt-0 sm:mt-0 text-pink-600 font-bold">
+      Armie Jane D.
+    </p>
+    <p class="text-3xl sm:text-5xl text-pink-600 font-bold">Delos Reyes</p>
+    <p class="sm:hidden text-xs mt-1 sm:mt-0 text-justify">
+      This is where my journey unfolds. Dive in and explore the stories I've
+      crafted, the challenges I've conquered, and the visions I've brought to
+      life. Let's embark on this adventure together.
+    </p>
     <button
-      class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] mt-6 px-5 py-3 text-black rounded font-semibold"
+      class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] mt-4 text-xs sm:text-lg px-2 sm:px-5 py-3 text-black rounded font-semibold"
+      (click)="downloadPDF()"
     >
       Download CV
     </button>
@@ -13,44 +21,52 @@
     <img
       src="../../assets/images/my-image.png"
       alt="my_image"
-      class="block mx-auto"
+      class="h-80 block sm:h-auto mx-auto"
     />
   </div>
-  <div class="my-40 text-2xl font-semibold text-justify">
+  <div class="hidden sm:block my-40 text-2xl font-semibold text-justify">
     <p>
       This is where my journey unfolds. Dive in and explore the stories I've
       crafted, the challenges I've conquered, and the visions I've brought to
       life. Let's embark on this adventure together.
     </p>
-    <div class="flex justify-around">
-      <button>
-        <img
-          src="../../assets/images/facebook.png"
-          alt="facebook"
-          class="border shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-14"
-        />
-      </button>
-      <button>
-        <img
-          src="../../assets/images/linkedin.png"
-          alt="linkedin"
-          class="border shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-14 p-1"
-        />
-      </button>
-      <button>
-        <img
-          src="../../assets/images/email.png"
-          alt="email"
-          class="border shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-14 p-1"
-        />
-      </button>
-      <button>
-        <img
-          src="../../assets/images/github.png"
-          alt="github"
-          class="border shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-14"
-        />
-      </button>
+    <div class="flex justify-around mt-4">
+      <a href="https://www.facebook.com/profile.php?id=100009212240739">
+        <button>
+          <img
+            src="../../assets/images/facebook.png"
+            alt="facebook"
+            class="border bg-white shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-5 sm:size-10"
+          />
+        </button>
+      </a>
+      <a href="https://www.linkedin.com/in/armie-jane-delos-reyes-8424932b3/">
+        <button>
+          <img
+            src="../../assets/images/linkedin.png"
+            alt="linkedin"
+            class="border bg-white shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-5 sm:size-10 p-0.5"
+          />
+        </button>
+      </a>
+      <a href="emailto:armiejanedelosrys@gmail.com">
+        <button>
+          <img
+            src="../../assets/images/email.png"
+            alt="email"
+            class="border bg-white shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-5 sm:size-10 p-0.5"
+          />
+        </button>
+      </a>
+      <a href="https://github.com/ArmieJaneDelosReyes">
+        <button>
+          <img
+            src="../../assets/images/github.png"
+            alt="github"
+            class="border bg-white shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-full size-5 sm:size-10"
+          />
+        </button>
+      </a>
     </div>
   </div>
 </div>

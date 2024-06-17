@@ -1,108 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
-p{
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap");
+p {
   font-family: "Bebas Neue", sans-serif;
 }
-
-.radial-bars{
+.w{
   width: 100%;
-  height: 200px;
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+.radial-bars {
+  width: 90%;
   display: flex;
-  flex-wrap: wrap (25%,25%,25%,25%);
+  flex-wrap: wrap (33%, 33%, 33%);
   justify-content: space-evenly;
   align-items: flex-start;
+
 }
 
-.radial-bars .radial-bar{
-  width: 50%;
-  height: 150px;
+.radial-bars .radial-bar {
+  width: 30%;
+  height: 80%;
   margin-bottom: -10px;
   position: relative;
-  margin-left: 15px;
+  
 }
 
-.radial-bars .radial-bar svg{
+.radial-bars .radial-bar svg {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
-  width: 120px;
+  width: 80%;
   height: 160px;
 }
 
-.radial-bars .radial-bar .progress-bar{
+.radial-bars .radial-bar .progress-bar {
   stroke-width: 10;
-  stroke:black;
+  stroke: black;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
   stroke-linecap: round;
   animation: animate-bar 1s linear forwards;
 }
 @keyframes animate-bar {
-  100%{
+  100% {
     stroke-dashoffset: -1;
   }
 }
 
-.path{
-  stroke-width: 10;
+.path {
+  stroke-width: 8;
   stroke: rgb(255, 0, 140);
-  fill: black;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
   stroke-linecap: round;
 }
 
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
-.path-5{animation: animate-path5 1s 1s linear forwards;}
-.path-6{animation: animate-path6 1s 1s linear forwards;}
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+.path-5 {
+  animation: animate-path5 1s 1s linear forwards;
+}
+.path-6 {
+  animation: animate-path6 1s 1s linear forwards;
+}
 
 @keyframes animate-path1 {
-  100%{
+  100% {
     stroke-dashoffset: 320;
   }
 }
 @keyframes animate-path2 {
-  100%{
+  100% {
     stroke-dashoffset: 320;
   }
 }
 @keyframes animate-path3 {
-  100%{
+  100% {
     stroke-dashoffset: 390;
   }
 }
 @keyframes animate-path4 {
-  100%{
+  100% {
     stroke-dashoffset: 410;
   }
 }
 @keyframes animate-path5 {
-  100%{
+  100% {
     stroke-dashoffset: 410;
   }
 }
 @keyframes animate-path6 {
-  100%{
+  100% {
     stroke-dashoffset: 450;
   }
 }
 
-.radial-bar .percentage{
+.radial-bar .percentage {
   position: absolute;
-  top: 60%;
-  left: 64%;
+  top: 100%;
+  left: 66%;
   color: white;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 17px;
   font-weight: 500;
   animation: showtext 0.5 1s linear forwards;
   opacity: 0;
 }
 
-.progress-bar .text{
+.progress-bar .text {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -117,25 +133,23 @@ p{
 }
 
 @keyframes showtext {
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-
-/* technical skills */
-.my-skills-container{
+/* graphic skills */
+.my-skills-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
+  // margin-left: 50px;
 }
-.tech-skills-container{
-  width: 100%;
-  height: 77vh;
+.tech-skills-container {
+  width: 100%;  
   display: block;
   justify-content: center;
 }
-.tech-skills-container h1{
+.tech-skills-container h1 {
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 40px;
@@ -143,10 +157,9 @@ p{
   color: #000;
   font-size: 20px;
   text-align: center;
-
 }
 
-.my-skills h2{
+.my-skills h2 {
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -156,28 +169,26 @@ p{
   text-align: left;
 }
 
-.progress-bar{
+.progress-bar {
   background: #eaeaea;
   width: 400px;
   height: 9px;
-  border-radius: 3px;
-
+  border-radius: 3px; 
 }
-
-.progress-bar div{
+.progress-bar div {
   height: 9px;
   border-radius: 3px;
   width: 0px;
   background: #fd0363;
 }
 
-.progress-bar div span{
+.progress-bar div span {
   height: 27px;
   width: 27px;
   border-radius: 50%;
   background: #fff;
   float: right;
-  margin: -9px -20px 0px 0px ;
+  margin: -9px -20px 0px 0px;
   color: #000;
   display: flex;
   align-items: center;
@@ -185,65 +196,64 @@ p{
   font-size: 12px;
   font-family: "Bebas Neue", sans-serif;
 }
-.figma-progress{
+.figma-progress {
   background: #fd0363;
   animation: figma-progress 1s linear forwards;
 }
-.photoshop-progress{
+.photoshop-progress {
   background: #fd0363;
   animation: photoshop-progress 1s linear forwards;
 }
-.canva-progress{
+.canva-progress {
   background: #fd0363;
   animation: canva-progress 1s linear forwards;
 }
-.brevo-progress{
+.brevo-progress {
   background: #fd0363;
   animation: brevo-progress 1s linear forwards;
 }
-.wordpress-progress{
+.wordpress-progress {
   background: #fd0363;
   animation: wordpress-progress 1s linear forwards;
 }
 
-
-.figma-progress span{
+.figma-progress span {
   border: 1px solid #fd0363;
 }
-.photoshop-progress span{
+.photoshop-progress span {
   border: 1px solid #fd0363;
 }
-.canva-progress span{
+.canva-progress span {
   border: 1px solid #fd0363;
 }
-.brevo-progress span{
+.brevo-progress span {
   border: 1px solid #fd0363;
 }
-.wordpress-progress span{
+.wordpress-progress span {
   border: 1px solid #fd0363;
 }
-@keyframes figma-progress{
-  100%{
+@keyframes figma-progress {
+  100% {
     width: 50%;
   }
 }
-@keyframes photoshop-progress{
-  100%{
+@keyframes photoshop-progress {
+  100% {
     width: 40%;
   }
 }
-@keyframes canva-progress{
-  100%{
+@keyframes canva-progress {
+  100% {
     width: 70%;
   }
 }
-@keyframes brevo-progress{
-  100%{
+@keyframes brevo-progress {
+  100% {
     width: 70%;
   }
 }
-@keyframes wordpress-progress{
-  100%{
+@keyframes wordpress-progress {
+  100% {
     width: 60%;
   }
 }
