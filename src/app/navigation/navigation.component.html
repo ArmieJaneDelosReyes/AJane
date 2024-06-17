@@ -1,7 +1,7 @@
 <nav
-  class="flex justify-between py-2 fixed top-0 inset-x-0 bg-zinc-100 w-full border shadow-lg z-40"
+  class="flex justify-between py-2 fixed top-0 inset-x-0 bg-zinc-100 w-full border shadow-lg z-40 px-6"
 >
-  <div class="flex my-0 mx-5 sm:my-0 sm:mx-40">
+  <div class="flex w-full justify-between my-0 sm:my-0 sm:mx-40">
     <div class="bg-zinc-100 border shadow-lg py-2 px-6 sm:px-8">
       <h3 class="logo_name font-bold text-3x1 sm:text-4xl text-pink-600">
         A<span class="text-black text-4x1 sm:text-4xl">Jane</span>
@@ -26,29 +26,33 @@
     </button>
   </div>
   <ul
-    class="hidden md:flex justify-between w-96 text-1xl text-black mt-2.5 font-semibold mx-5 sm:mx-40"
+    class="hidden md:flex md:justify-around ml-5 w-96 text-1xl text-black mt-2.5 font-semibold sm:mx-40"
   >
-    <li class="hover:text-pink-600"><a href="#home">Home</a></li>
-    <li class="hover:text-pink-600"><a href="#about">About</a></li>
-    <li class="hover:text-pink-600"><a href="#skills">Skills</a></li>
-    <li class="hover:text-pink-600"><a href="#project">Projects</a></li>
+    <li class="hover:text-pink-600 mx-2"><a href="#home">Home</a></li>
+    <li class="hover:text-pink-600 mx-2"><a href="#about">About</a></li>
+    <li class="hover:text-pink-600 mx-2"><a href="#skills">Skills</a></li>
+    <li class="hover:text-pink-600 mx-2"><a href="#footer">Contacts</a></li>
+    <!-- <li class="hover:text-pink-600 mx-2"><a href="#project">Projects</a></li> -->
   </ul>
   <!-- Dropdown menu -->
   <ul
     [ngClass]="{ block: isMenuOpen, hidden: !isMenuOpen }"
-    class="md:hidden absolute top-14 left-2 right-2 bg-zinc-100 text-center text-1xl text-black font-semibold"
+    class="md:hidden absolute top-14 left-2 right-2 bg-zinc-100 text-center text-1xl text-black font-semibold divide-y-4 divide-slate-400/25"
   >
     <li class="py-2 hover:text-pink-600">
-      <a href="#home" (click)="isMenuOpen = false">Home</a>
+      <a href="#home" (click)="isMenuOpen = true">Home</a>
     </li>
     <li class="py-2 hover:text-pink-600">
-      <a href="#about" (click)="isMenuOpen = false">About</a>
+      <a href="#about" (click)="isMenuOpen = true">About</a>
     </li>
     <li class="py-2 hover:text-pink-600">
-      <a href="#skills" (click)="isMenuOpen = false">Skills</a>
+      <a href="#skills" (click)="isMenuOpen = true">Skills</a>
     </li>
     <li class="py-2 hover:text-pink-600">
-      <a href="#project" (click)="isMenuOpen = false">Projects</a>
+      <a href="#footer" (click)="isMenuOpen = true">Contacts</a>
     </li>
+    <!-- <li class="py-2 hover:text-pink-600">
+      <a href="#project" (click)="isMenuOpen = true">Projects</a>
+    </li> -->
   </ul>
 </nav>
